@@ -138,7 +138,7 @@ namespace Microsoft.Identity.Web
             }
             catch (MsalException ex)
             {
-                _logger.LogInformation(ex, "Exception occured while adding an account to the cache from the auth code. ");
+                _logger.LogInformation(ex, "Exception occurred while adding an account to the cache from the auth code. ");
                 throw;
             }
         }
@@ -244,7 +244,7 @@ namespace Microsoft.Identity.Web
         /// <param name="scopes">scopes requested to access a protected API. For this flow (client credentials), the scopes
         /// should be of the form "{ResourceIdUri/.default}" for instance <c>https://management.azure.net/.default</c> or, for Microsoft
         /// Graph, <c>https://graph.microsoft.com/.default</c> as the requested scopes are defined statically with the application registration
-        /// in the portal, and cannot be overriden in the application.</param>
+        /// in the portal, and cannot be overridden in the application.</param>
         /// <returns>An access token for the app itself, based on its scopes</returns>
         public async Task<string> GetAccessTokenForAppAsync(IEnumerable<string> scopes)
         {
@@ -269,7 +269,7 @@ namespace Microsoft.Identity.Web
         /// Removes the account associated with context.HttpContext.User from the MSAL.NET cache
         /// </summary>
         /// <param name="context">RedirectContext passed-in to a <see cref="OnRedirectToIdentityProviderForSignOut"/>
-        /// Openidconnect event</param>
+        /// OpenIDConnect event</param>
         /// <returns></returns>
         public async Task RemoveAccountAsync(RedirectContext context)
         {

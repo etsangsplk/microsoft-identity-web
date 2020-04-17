@@ -9,6 +9,20 @@ namespace Microsoft.Identity.Web.Test
 {
     public class WebAppExtensionsTests
     {
+        [Fact]
+        public void AddWebAppCallsProtectedWebApi()
+        {
+            throw new NotImplementedException();
+            //Check TokenAcquisitionService
+            //CheckHttPContextAccessor
+            //ConfidentialClientApplicationOptions and MicrosoftIdentityOptions with default, valid and invalid options
+            //OpenIdConnectOptions
+            //  scope, responsetype, initial scopes if set, if not set
+            //  OnAuthorizationCodeReceived
+            //  OnTokenValidated
+            //  OnRedirectToIdentityProviderForSignOut
+        }
+
         [Theory]
         [InlineData(TestConstants.AuthorityCommonTenant, TestConstants.AuthorityCommonTenantWithV2)]
         [InlineData(TestConstants.AuthorityOrganizationsUSTenant, TestConstants.AuthorityOrganizationsUSWithV2)]
